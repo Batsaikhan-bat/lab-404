@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp4.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="Student" Height="250" Width="200">
+    <StackPanel>
+        <Label Width="175" >ID:</Label>
+        <TextBox x:Name="bt_id" Width="175"></TextBox>
+        <Label Width="175">Name:</Label>
+        <TextBox x:Name="bt_name" Width="175"></TextBox>
+        <Label Width="175">Author:</Label>
+        <TextBox x:Name="bt_au" Width="175"></TextBox>
+        <Label Width="175">Description:</Label>
+        <TextBox x:Name="bt_des" Width="175"></TextBox>
+        <Grid Height="20" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="bt_ADD" Grid.Column="0" Height="20" VerticalAlignment="Bottom" Click="bt_ADD_Click">Add</Button>
+                <Button x:Name="bt_CANCEL" Grid.Column="1" Height="20" VerticalAlignment="Top" Click="bt_CANCEL_Click">Cancel</Button>
+            </Grid>
+    </StackPanel>
+</Window>
